@@ -1,3 +1,17 @@
+use the [original](https://github.com/SwipeCellKit/SwipeCellKit) package - the functionality I augmented was actually something you could do with the original.
+
+1. 
+```
+import SwipeCellKit
+
+struct SwipeButtonRotator: SwipeActionTransitioning {
+	func didTransition(with context: SwipeActionTransitioningContext) {
+		context.button.layer.transform = CATransform3DMakeRotation(180.0 * (CGFloat.pi / 180), 0, 0, 1.0)
+	}
+}
+```
+1. After creating your action, do `action.transitionDelegate = SwipeButtonRotator()`
+
 # SwipeCellKit
 
 [![Build Status](https://travis-ci.org/jerkoch/SwipeCellKit.svg)](https://travis-ci.org/jerkoch/SwipeCellKit) 
