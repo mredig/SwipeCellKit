@@ -1,6 +1,6 @@
 use the [original](https://github.com/SwipeCellKit/SwipeCellKit) package - the functionality I augmented was actually something you could do with the original.
 
-1. 
+1. create the delegate handler
 	```
 	import SwipeCellKit
 	
